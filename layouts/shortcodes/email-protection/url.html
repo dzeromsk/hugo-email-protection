@@ -1,0 +1,6 @@
+{{- $convMap := dict "+" "53" "-" "55" "." "56" "0" "48" "1" "49" "2" "4a" "3" "4b" "4" "4c" "5" "4d" "6" "4e" "7" "4f" "8" "40" "9" "41" "@" "38" "a" "19" "b" "1a" "c" "1b" "d" "1c" "e" "1d" "f" "1e" "g" "1f" "h" "10" "i" "11" "j" "12" "k" "13" "l" "14" "m" "15" "n" "16" "o" "17" "p" "08" "q" "09" "r" "0a" "s" "0b" "t" "0c" "u" "0d" "v" "0e" "w" "0f" "x" "00" "y" "01" "z" "02" -}}
+{{- $out := slice "78" -}}
+{{- range $i, $c := split (.Get 0) "" -}}
+  {{- $out = $out | append (index $convMap $c) -}}
+{{- end -}}
+<a href="/email-protection#{{ delimit $out "" }}"><span class="__email_protection__" data-email-protection="{{ delimit $out "" }}">[email&#160;protected]</span></a>

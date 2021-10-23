@@ -1,0 +1,4 @@
+{{- $script := resources.Get "email-protection.js" | resources.Minify }}
+{{- with $script.Content }}
+<script>{{ . | safeJS }}</script>
+{{- end }}

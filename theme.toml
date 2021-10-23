@@ -1,0 +1,13 @@
+name = "Email Protection"
+
+description = "Hugo theme component that hides mail addresses in order to keep them from being accessed by bots"
+features = ["component", "e-mail address", "mail address", "bot", "email", "hide", "obfuscate"]
+homepage = "https://github.com/dzeromsk/hugo-email-protection"
+license = "Apache-2.0"
+licenselink = "https://github.com/dzeromsk/hugo-email-protection/blob/main/LICENSE"
+min_version = "0.59.1"
+tags = ["component", "e-mail address", "mail address", "bot", "email", "hide", "obfuscate"]
+
+[author]
+homepage = "https://github.com/dzeromsk"
+name = "Dominik Zeromski"
